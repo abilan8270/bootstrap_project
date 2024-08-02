@@ -1,0 +1,180 @@
+
+.navbar {
+    background-color:red;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-item > a:hover {
+    background-color: red;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(22, 1, 1);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+
+.marquee-container {
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    background: transparent; /* Make the background transparent */
+}
+.marquee {
+    position: absolute;
+    animation: scrollUp 10s linear infinite;
+    display: flex;
+    flex-direction: column;
+}
+.marquee p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.marquee:hover {
+    animation-play-state: paused;
+}
+@keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+
+
+
+
+
+.full-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.image-container {
+    flex: 1;
+    background-size: cover;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+.img-hover-container {
+    position: relative;
+    overflow: hidden;
+}
+.img-hover-container img {
+    transition: transform 0.3s ease;
+}
+.img-hover-container:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+
+
+
+.element {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.element img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+.element h5 {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.carousel-item {
+    text-align: center;
+    padding: 100px 0; 
+    color: #fff; 
+}
+.carousel-caption {
+    position: static;
+    color: #000;
+}
+.carousel {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+    background-size: cover;
+}
+
+
